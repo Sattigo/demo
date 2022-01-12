@@ -1,0 +1,40 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: true
+    implicit-dynamic: true
+  enable-experiment:
+    - extension-methods
+  errors:
+    todo: info
+    cast_nullable_to_non_nullable: error
+  exclude:
+    - test/
+    - test/**.*
+    - lib/**.g.dart
+    - lib/**.freezed.dart
+
+linter:
+  rules:
+    cast_nullable_to_non_nullable: true
+    avoid_web_libraries_in_flutter: true
+    flutter_style_todos: true
+    always_declare_return_types: true
+    camel_case_types: true
+    empty_constructor_bodies: true
+    annotate_overrides: true
+    avoid_init_to_null: true
+    constant_identifier_names: true
+    one_member_abstracts: true
+    slash_for_doc_comments: true
+    unnecessary_brace_in_string_interps: true
+    prefer_final_locals: true
+    always_use_package_imports: true
+    avoid_unused_constructor_parameters: true
+    lines_longer_than_80_chars: true
+    prefer_final_in_for_each: true
+    sort_child_properties_last: true
+    prefer_single_quotes: true
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
